@@ -1,0 +1,338 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+}
+
+header {
+	background-color: #222;
+	padding: 20px;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+nav {
+	display: flex;
+ 	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+nav a:hover {
+	color: #aaa;
+}
+
+.hero {
+	text-align: center;
+	margin-bottom: 50px;
+	padding: 40px;
+	background-color: #f5f5f5;
+	border-radius: 10px;
+}
+
+body.dark .hero {
+	background-color: #333;
+}
+
+.hero h1 {
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+
+.hero p {
+	font-size: 18px;
+}
+
+.about-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.about-text {
+	max-width: 500px;
+	text-align: left;
+}
+
+#about {
+	text-align: center;
+	padding: 60px 20px;
+}
+
+#about img {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	object-fit: cover;
+	transition: transform 0.3s;
+}
+
+#about img:hover {
+	transform: scale(1.05);
+}
+
+#about p {
+	max-width: 600px;
+	margin: 20px auto;
+}
+
+#skills {
+	padding: 60px 20px;
+	text-align: center;
+	background-color: #f5f5f5;
+}
+
+.skills-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+.skill {
+	width: 200px;
+	padding: 20px;
+	border: 2px solid #222;
+}
+
+#projects {
+	padding: 60px 20px;
+	text-align: center;
+}
+
+.project-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.project {
+	width: 300px;
+	padding: 25px;
+	border: 2px solid #222;
+	text-align: left;
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+	transform: translateY(-8px) scale(1.03);
+	box-shadow: 0 10px 20px rgba (0, 0, 0, 0.2);
+}
+
+.project ul {
+	padding-left: 20px;
+}
+
+#hobbies {
+	padding: 60px 20px;
+	text-align: center;
+	background-color: #f5f5f5;
+}
+
+.hobbies-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.hobby {
+	width: 250px;
+	padding: 20px;
+	border: 2px solid #222;
+}
+
+#contact {
+	padding: 60px 20px;
+	text-align: center;
+}
+
+#contact form {
+	max-width: 500px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+#contact input, #contact textarea {
+	padding: 10px;
+	font-size: 16px;
+	border: 2px solid #222;
+}
+
+#contact textarea {
+	min-height: 150px;
+	resize: vertical;
+}
+
+#contact button {
+	padding: 10px;
+	font-size: 16px;
+	cursor: pointer;
+}
+	
+footer {
+	padding: 30px 20px;
+	backgroun-color: #222;
+	color: white;
+	text-align: center;
+}
+
+.skill, .project, .hobby {
+	border-radius: 10px;
+	background-color: #f5f5f5;
+	transition: transform 0.3s;
+	box-shadow: 0 4px 10px rgba (0, 0, 0, 0.15);
+}
+
+.skill:hover, .project:hover, .hobby:hover {
+	transform: translateY(-8px) scale(1.03);
+}
+
+.skill h3, .project h3, .hobby h3 {
+	margin-top: 0;
+}
+
+#contact input, #contact textarea {
+	border-radius: 6px;
+}
+
+body.dark {
+	background-color: #222;
+	color: white;
+}
+
+body.dark .skill, body.dark .project, body.dark .hobby {
+	background-color: #333;
+	border-color: white;
+}
+
+body.dark #contact input, body.dark #contact textarea {
+	background-color: #333;
+	color: white;
+	border-color: white;
+}
+#contact button {
+	border: none;
+	border-radius: 6px;
+	background-color: #222;
+	color: white;
+}
+
+#contact button:hover {
+	background-color: #444;
+}
+
+@media (max-width: 600px) {
+
+	nav {
+		flex-direction: column;
+		gap: 15px;		
+	}
+	
+	.skill, .project, .hobby {
+		width: 100%;
+		max-width: 350px;
+	}
+
+	#about img {
+		width: 150px;
+		height: 150px;
+	}
+
+	#contact form {
+		width: 100%;
+	}
+	
+	.about-content {
+		flex-direction: column;
+		gap: 25px;
+	}
+
+	.about-text {
+		text-align: center;
+	}
+}
+
+#themeButton {
+	padding: 8px 14px;
+	border: 1px solid white;
+	border-radius: 6px;
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+}
+
+#themeButton:hover {
+	background-color: white;
+	color: #222;
+}
+
+.project a {
+	display: inline-block;
+	margin-top: 15px;
+	padding: 8px 14px;
+	background-color: #222;
+	color: white;
+	text-decoration: none;
+	border-radius: 6px;
+}
+
+.project a:hover {
+	background-color: #444;
+}
+
+.social-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+	padding: 25px 20px;
+	background-color: #333;
+}
+
+.social-nav a {
+	color: white;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.social-nav a:hover {
+	color: #aaa;
+}
+
+.cv-button {
+	display: inline-block;
+	margin-top: 15px;
+	padding: 10px 20px;
+	background-color: #222;
+	color: white;
+	text-decoration: none;
+	border-radius: 6px;
+	transition: transform 0.3s, background-color 0.3s;
+}
+
+.cv-button:hover {
+	transform: translateY(-3px);
+	background-color: #444;
+}

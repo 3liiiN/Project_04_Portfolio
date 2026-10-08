@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+
+	<header>
+
+		<nav>
+
+			<a href="#about">About</a>
+			<a href="#skills">Skills</a>
+			<a href="#projects">Projects</a>
+			<a href="#hobbies">Hobbies</a>
+			<a href="#contact">Contact</a>
+
+		</nav>
+
+		<button id="themeButton">Toggle Theme</button>
+
+	</header>
+
+	<main>
+
+		<section id="about">
+			
+			<div class="hero">
+				<h1>Ali Al Nessir</h1>
+				<p>Computer Engineer | Cybersecurity & Cloud Enthusiast</p>
+				<a href="#" class="cv-button">Download My CV</a>
+			</div>
+			
+			<div class="about-content">
+				<img src="assets/avatar.jpg" alt="Avatar Photo">
+				<div class="about-text">
+					<h2>About Me</h2>
+					<p>I am a Computer Engineering graduate building my career around cloud infrastructure, cybersecurity, and automation. I enjoy learning by building practical projects and continuously expanding my technical skills.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="skills">
+
+			<h2>Skills</h2>
+			
+			<div class="skills-container">
+
+				<div class="skill">
+					<h3>Python</h3>
+					<p>Programming and scripting</p>
+				</div>
+
+				<div class="skill">
+					<h3>Linux</h3>
+					<p>Linux adminstration and command line</p>
+				</div>
+
+				<div class="skill">
+					<h3>AWS</h3>
+					<p>Cloud infrastructure and services</p>
+				</div>
+
+				<div class="skill">
+					<h3>Networking</h3>
+					<p>TCP/IP, routing, switching and security</p>
+				</div>
+
+				<div class="skill">
+					<h3>Cybersecurity</h3>
+					<p>Web security and security fundamentals</p>
+				</div>
+
+				<div class="skill">
+					<h3>HTML / CSS / JavaScript</h3>
+					<p>Web development fundamentals</p>
+				</div>
+			</div>
+
+		</section>
+
+		<section id="projects">
+		
+			<h2>Projects</h2> 
+	
+			<div class="project-container">
+
+				<article class="project">
+					<h3>Project 00 - Linux + Git + GitHub</h3>
+					<p>Built a foundation in Linux terminal usage, file management, Git version control, GitHub, Markdown, and SSH authentication.</p>
+					<ul>
+						<li>Exercise 00 - Linux Navigation & Directories</li>
+						<li>Exercise 01 - File Manipulation with Bash</li>
+						<li>Exercise 02 - GitHub Repository</li>
+						<li>Exercise 03 - Project Documentation & SSH</li>
+					</ul>
+					<a href="https://github.com/3liiiN/Project_00_Linux_Git_Github" target="_blank" rel="noopener noreferrer">
+						View on GitHub.
+					</a>
+				</article>
+
+				<article class="project">
+					<h3>Project 01 - HTML Fundamentals</h3>
+					<p>Built structured HTML5 pages while learning semantic HTML, links, images, lists, tables, forms, and accessible document structure.</p>
+					<ul>
+						<li>Exercise 00 - HTML5 Document Structure</li>
+						<li>Exercise 01 - Text Hierarchy</li>
+						<li>Exercise 02 - Links & Images</li>
+						<li>Exercise 03 - Lists & Tables</li>
+						<li>Exercise 04 - Forms & Inputs</li>
+						<li>Exercise 05 - Semantic Architecture</li>
+					</ul>
+	                                <a href="https://github.com/3liiiN/Project_01_HTML" target="_blank" rel="noopener noreferrer">
+						View on GitHub.
+					</a>
+				</article>
+
+				<article class="project">
+					<h3>Project 02 - CSS & Visual Presentation</h3>
+					<p>Learned how to control layout, positioning, shapes, colors, transparency, sizing, animations, and visual interactions with CSS.</p>
+					<ul>
+						<li>Exercise 00 - Flexbox Layout</li>
+						<li>Exercise 01 - CSS Positioning</li>
+						<li>Exercise 02 - CSS Shapes</li>
+						<li>Exercise 03 - Colors & Opacity</li>
+						<li>Exercise 04 - CSS Box Model</li>
+						<li>Bonus - Animations & Transitions</li>
+					</ul>
+					<a href="https://github.com/3liiiN/Project_02_CSS-Visual_Presentation-" target="_blank" rel="noopener noreferrer">
+						View on GitHub.
+					</a>
+				</article>
+
+				<article class="project">
+					<h3>Project 03 - JavaScript & Interactivity</h3>
+					<p>Built interactive web functionality using JavaScript, including programming logic, DOM manipulation, events, and dynamic applications.</p>
+					<ul>
+						<li>Exercise 00 - Variables & Types</li>
+						<li>Exercise 01 - Functions & Conditions</li>
+						<li>Exercise 02 - DOM Manipulation</li>
+						<li>Exercise 03 - Event-Driven Counter</li>
+						<li>Exercise 04 - Interactive Task Manager</li>
+					</ul>
+					<a href="https://github.com/3liiiN/Project_03_JavaScript" target="_blank" rel="noopener noreferrer">
+						View on GitHub.
+					</a>
+				</article>
+			</div>
+		</section>
+
+		<section id="hobbies">
+	
+			<h2>Hobbies</h2>
+			
+			<div class="hobbies-container">
+
+				<article class="hobby">
+					<h3>Fitness</h3>
+					<p>Training and learning about fitness, strenght, and nutrition.</p>
+				</article>
+
+				<article class="hobby">
+					<h3>Technology</h3>
+					<p>Exploring new technologies, cloud computing, and cybersecurity.</p>
+				</article>
+
+				<article class="hobby">
+					<h3>Learning</h3>
+					<p>Continuously learning new technical skills and working on personal projects.</p>
+				</article>
+			</div>	
+		</section>
+
+		<section id="contact">
+	
+			<h2>Contact</h2>
+	
+			<form>
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required minlength="3">
+
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="message">Message</label>
+				<textarea id="message" name="message" required minlength="10"></textarea>
+
+				<button type="submit">Send Message</button>
+			</form>
+		</section>
+
+	</main>
+
+	<nav class="social-nav">
+		<a href="#">Facebook</a>
+		<a href="#">Instagram</a>
+		<a href="#">Whatsapp</a>
+		<a href="#">GitHub</a>
+		<a href="#">LinkedIn</a>
+	</nav>		
+
+	<footer>
+		<p>My Portfolio</p>
+	</footer>
+	
+</body>
+</html>
